@@ -1,0 +1,27 @@
+antigamente a comunicação era feita por meio de desenhos feitos nas cavernas - essa era uma maneira de comunicação mas que era muito limitada pois exigia que os seres humanos estivessem nessa caverna para que vesses a mensagem - com a evolução disso surgiram as linguagens surgiram os idiomas mas mesmo assim essa limitação física era muito grande - as pessoas para se comunicar deveriam estar no mesmo lugar.
+
+a comunicação a distancia surgiu com índios que se comunicada através de sinais de fumaça
+
+1845 - porem a comunicação a distancia deu um salto muito grande quando Samuel morse criou o telegrafo -> código morse "representados através de linhas e pontos"
+
+1950 -> a evolução da comunicação teve outras pessoas muito importantes
+Claude Shannon -> pai da teoria da informação
+henry Nayquist -> que criou muitas teorias para transmissão de dados
+Ralph Hartley -> criou a teoria de osciladores
+
+1945 -> ainda na quela época os computadores eram equipamentos muito grandes muito pesados como por exemplo o eniac que ficava na universidade da Pensilvânia o eniac não tinha monitores - os dados eram exibidos em painéis luminosos esses computadores eram como as cavernas - ficavam num lugar especifico e para qualquer pessoa que precisasse utilizar os dados desse computador ela deveria ter acesso e esse computador o principal motivo disso era o seu avantajado tamanho
+
+com a evolução a informática em 1959 já existiam computadores menores como o IBM 1401 com ele ja era possível carrega-lo de um lugar para outo mesmo que fosse um pouco difícil
+
+uma das principais invenções que permitiram a comunicação a distancia surgiu em 1969 com a (DARPA) uma agencia nacional de defesa criada pelo exercito dos estados unidos para a criação de tecnologias durante a guerra fria, a ideia era que os dados de computadores que estavam em bases militares fossem protegidos para isso a (DARPA) contava com o dinheiro do governo e com o conhecimento dos universitários uma das universidades que mais auxiliou nessa rede de dados foi a universidade da California inicialmente a primeira missão da (DARPA) era interligar computadores em 4 pontos diferentes com isso eles criaram uma rede chamada "ARPANET" que interligava 4 computadores diferentes
+
+um (SDS CIGMA 7 - na universidade da California)
+um (SDS 90 - na universidade de Stanford)
+um (IBM 37075 - no centro de matemática de los Angeles)
+um (DEC PDP 10- na base militar em Utah)
+
+como são 4 computadores completamente diferentes logo não de comunicavam entre si a primeira tarefa foi criar um protocolo que seria uma especie de idioma único que as 4 maquinas falariam - criou-se então o protocolo (NCP) que permitiu que essa tarefa fosse realizada nessa época o protocolo (NCP) já tinha alguns protocolos que são utilizados ate hoje - como por exemplo o "FTP" - para transmissão de arquivo e o "DNS" - para identificação de maquinas na rede
+
+em 1972 surgiu o e-mail por Ray  Tomlinson que modificou alguns programas da época para enviar mensagens eletrônicas - Ray Tomlinsom escolheu o carácter "arroba" para separar o nome de usuário do nome do servidor
+
+1973 - Robert kehn tinha criado um novo protocolo chamado transfer control protocol (TCP) esse protocolo trata os dados de uma maneira diferente - quebrando-os em pacotes - Robert Kehen também foi responsável por um termo muito valioso (INTERNETTING) - ele era utilizado para representar redes que se comunicavam entre si esse termo seria utilidade mais tarde para a mudança do nome (ARPANET) para (INTERNET) porem o protocolo (TCP) fazia bem as transferências mas não conseguia tratar a identificação das maquinas
