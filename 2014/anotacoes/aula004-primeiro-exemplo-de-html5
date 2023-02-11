@@ -1,0 +1,187 @@
+Marcas html - uma marca html é tudo aquilo que que for escrito entre os sinais de maior "<" ou menor ">"
+como por exemplo a marca <html> -> isso e chamado de "marca" html ou "tag" - a grande maioria das tags
+possuem uma abertura e um fechamento então a tag html tem o fechamento que é o </html> - então tudo o que
+estiver descrito ente <html> e </html> será considerado um documento html
+
+Na versão nova do html5 podemos fazer 2 coisas muito importantes - primeiro dizer para o navegador que o
+arquivo que estamos trabalhando é um documento html5 - isso e feito através de uma tag especial que é a
+<!DOCTYPE html> isso dentro da tag - isso vai informar para os navegadores que o que você vai escrever é
+um documento  do tipo html5 - outra coisa muito importante que você pode informar no html é o idioma de onde
+ele vai ser escrito - isso é feito dentro da tag de abertura do <html> cocando o parâmetro (lang="idioma") - 
+ficando <html lang="pr-br"> isso vai ajudar pastante os mecanismos de busca - por exemplo o google na hora que
+você faz uma busca você ja deve ter escolhido "eu quero buscar em sites escritos em português do brasil" -
+antigamente o google tinha que identificar as palavras do seu site para saber que ele era português do brasil
+agora você pode explicitar isso na tag html colocando o parâmetro (lang="") 
+
+Dentro do documento html temos duas area bem especiais também a area de cabeçalho que é o <head></head> que é
+a area de cabeçalho e uma segunda area que é a area <body></body> - exemplo a baixo
+
+<!DOCTYPE html>                 |
+<html lang="pt-br">             |
+<head>                          |
+                                |
+</head>                         | <- está é uma estrutura básica de um documento html
+<body>                          |
+                                |
+</body>                         |
+</html>                         |
+
+A area red é para configurações comportamentais do seu site | de como ele vai de comportar | de como ele vai
+ser configurado | mas visualmente tudo o que vai aparecer tem que estar na area "body" ou seja tudo o que é
+texto - imagens - sons e videos tem que estar escrito na area "body"
+
+<!DOCTYPE html>                 |
+<html lang="pt-br">             |
+<head>                          |
+                                | <- se você utilizar desta forma sem formatação os navegadores
+</head>                         | <- substituirão os as letras acentuadas por outros caracteres
+<body>                          |
+    Olá, Mundo!                 |
+</body>                         |
+</html>                         |
+
+isso acontece por conta da formatação - os navegadores estão procurando entender o parão "ANSI" que é o padrão
+americano - porem nos estamos utilizando acentuações latinas então temos que utilizar o "UTF"
+
+<!DOCTYPE html>                 |
+<html lang="pt-br">             |
+<head>                          |
+    <meta charset="UTF-8">      |  <- essa tag "meta" pode ser usada para varias coisas uma delas é
+</head>                         |  <- utilizar o (charset="") - charset significa conjunto de caracteres
+<body>                          |  <- que é utilizando para utilizar um conjunto de caracteres exemplo
+                                |  <- a lingua latina "UTF-8"
+</body>                         |
+</html>                         |
+
+ai vem uma coisa muito importante a tag "meta" não tem fechamento como </meta> - </meta> não existe então
+naõ digito dessa maneira - esse é um caso de uma tag que não tem fechamento nas tag que não tem fechamento
+você tem duas opções deixar apenas a tag de abertura "<meta charset="UTF-8">" ou utilizar o fechamento "/"
+no final da tag "<meta charset="UTF-8"/>" - sem a "/" no final é o padrão html antigo - com a "/" no final
+é o padrão oriundo do "xhtml" que veio do "xml"
+
+<!DOCTYPE html>                 |
+<html lang="pt-br">             |
+<head>                          |
+    <meta charset="UTF-8">      |  <- depois de salvar o arquivo pode atualizar a pagina e verificar
+</head>                         |  <- se está com as acentuações
+<body>                          |
+                                |
+</body>                         |
+</html>                         |
+
+----------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>                 |
+<html lang="pt-br">             |
+<head>                          |
+    <meta charset="UTF-8">      |
+    <title>Documento</title>    |  <- outra tag comportamental é a tag "title" já a tag "title" tem
+</head>                         |  <- fechamento com </title> - a tag "title" troca o nome do
+<body>                          |  <- arquivo por um nome na pagina mais amigável 
+                                |
+</body>                         |
+</html>                         |
+
+----------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>                 |
+<html lang="pt-br">             |
+<head>                          |
+    <meta charset="UTF-8">      |  
+    <title>Documento</title>    |  <- a tag "h1" vai criar um titulo - perceba o seguinte "h1" não é letra
+</head>                         |  <- grande apesar de muita gente por ai ensinar dessa maneira "h1" é um
+<body>                          |  <- titulo - letra grande ou letra pequena é uma questão de formatação
+    <h1>Olá, Mundo!</h1>        |
+</body>                         |
+</html>                         |
+
+----------------------------------------------------------------------------------------------------------------
+
+h1 significa hierarquia de títulos onde
+
+h1 -> é o titulo principal
+h2 -> é o subtitulo de h1
+h3 -> é o subtitulo de h2 e h1 e assim sucessivamente
+
+<!DOCTYPE html>                             |
+<html lang="pt-br">                         |  <- note que agora você poderá utilizar acentuação sem problemas
+<head>                                      |  <- por conta do conjunto de caracteres que esta configurado pra
+    <meta charset="UTF-8">                  |  <- "UTF-8" - perceba também obviamente o tamanho das letras são
+    <title>Documento</title>                |  <- menores mas isso não significa que o "h2" é menor do que "h1"
+</head>                                     |  <- - pode-se através das "CSS" formatar o "h2" para focar maior
+<body>                                      |  <- do que o "h1" nada impede de ser feito - porem a hierarquia
+    <h1>Olá, Mundo!</h1>                    |  <- é o que vale - o "h1" é o titulo principal e o "h2" é
+    <h2>Me livrando da maldição</h2>        |  <- indicado como subtitulo de "h1" 
+</body>                                     |  
+</html>                                     |
+
+----------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>                                             |
+<html lang="pt-br">                                         | 
+<head>                                                      |  <- antigamente no "h2" - a formatação era
+    <meta charset="UTF-8">                                  |  <- peita pela própria linguagem html
+    <title>Documento</title>                                |  <- então você tinha uma tag chamada
+</head>                                                     |  <- <font color="blue>" e ai você colocava
+<body>                                                      |  <- a fonte em azul a tag de estilização "CSS"
+    <h1>Olá, Mundo!</h1>                                    |  <- dentro das tags html esta depreciada o que
+    <h2><font color="blue">Me livrando da maldição</h2>     |  <- significa que não existe mais na versão nova 
+</body>                                                     |  <- html
+</html>                                                     |
+
+----------------------------------------------------------------------------------------------------------------
+
+Agora a formatação não é feita mais em html5 e sim por outa tecnologia chamada "CSS" as CSS são folhas de
+estilo que podem ser incluídas no documento html - formatação também é uma configuração comportamental logo
+poder ser veira no cabeçalho 
+
+<!DOCTYPE html>                                             |
+<html lang="pt-br">                                         |
+<head>                                                      |
+    <meta charset="UTF-8">                                  |
+    <title>Documento</title>                                |  <- aqui é colocado a tag para estilo que é a tag
+    <style>                                                 |  <- "style" - e tudo que estiver dentro de style
+        h1 {                                                |  <- será coincinerado como estilo da pagina
+            font-family: Arial;                             |  <- configurado por exemplo tudo o que for h1
+            fonte-size: 30pt;                               |  <- então basta colocar h1 sem marcas de tag e
+            color: blue;                                    |  <- e abrir chaves - tudo que estiver entre as
+        }                                                   |  <- chaves vai ser a configuração de h1 essa é
+    </style>                                                |  <- a formatação de CSS e não de html então
+</head>                                                     |  <- existe uma leve diferença
+<body>                                                      |
+    <h1>Olá, Mundo!</h1>                                    |
+    <h2><font color="blue">Me livrando da maldição</h2>     |
+</body>                                                     |
+</html>                                                     |
+
+configurações em CSS são sempre feitas em minusculas também logo vamos configurar como o tipo de fonte com
+"font-family: Arial;" - o tamanho da fonte "font-size: 30pt;" - a cor "color: blue;"
+
+----------------------------------------------------------------------------------------------------------------
+
+Muita gente pode pensar que é mais complicado formatar dessa maneira mas por exemplo se tiver outro
+<h1>OBA! Me livrei</h1> - o "OBA! Me livrei" também é um titulo em h1 logo ele absorve toda a formatação
+do titulo de cima - e para formatar sombra basta acrescentar "texto-shadow: 2px 2px 2px black;" o primeiro
+px e o deslocamento lateral o segundo px e o deslocamento vertical e o terceiro px é o espalhamento da sombra
+e o quarto parâmetro e a cor da sombra
+
+<!DOCTYPE html>                                             |
+<html lang="pt-br">                                         |
+<head>                                                      |
+    <meta charset="UTF-8">                                  |
+    <title>Documento</title>                                |
+    <style>                                                 |
+        h1 {                                                | 
+            font-family: Arial;                             |
+            fonte-size: 30pt;                               |
+            color: blue;                                    |
+            texto-shadow: 2px 2px 2px black;                |
+        }                                                   |
+    </style>                                                |
+</head>                                                     |
+<body>                                                      | 
+    <h1>Olá, Mundo!</h1>                                    |
+    <h2><font color="blue">Me livrando da maldição</h2>     |
+    <h1>OBA! Me livrei</h1>                                 |
+</body>                                                     |
+</html>                                                     |

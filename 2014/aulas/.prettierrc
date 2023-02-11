@@ -1,5 +1,10 @@
 {
+    "autor": "GabrielMarlon",
+    "versão": "1.0.0",
     "tabWidth": 2,
+    "useTabs": false,
     "semi": true,
-    "singleQuote": true
+    "singleQuote": true,
+    "printWidth": 90,
+    "endOfLine": "lf"
 }
