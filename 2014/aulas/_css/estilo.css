@@ -9,7 +9,6 @@
 body {
   background-color: #dddddd;
   color: #000000;
-  
 }
 
 div#interface {
@@ -25,14 +24,33 @@ p {
   text-indent: 35px;
 }
 
+/* Formatação do Cabeçalho*/
 header#cabecalho {
-  
+  border-bottom: 1px #606060 solid;
+  height: 150px;
+  background: url('../_imagens/glass-logo-peq.jpg') no-repeat 0px 80px;
 }
 
 header#cabecalho img#oculos {
   position: absolute;
   left: 945px;
-  top: 50px;
+  top: 78px;
+}
+
+header#cabecalho h1 {
+  font-family: Arial, sans-serif;
+  font-size: 30pt;
+  color: #606060;
+  text-shadow: 1px 1px 1px #00000060;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+header#cabecalho h2 {
+  font-family: Aria, sans-serif;
+  font-size: 15pt;
+  color: #888888;
+  padding: 0px;
 }
 
 /* Formatação de imagens com legendas */
@@ -74,7 +92,7 @@ nav#menu ul {
   text-transform: uppercase;
   position: absolute;
   top: 0px;
-  left: 750px;
+  left: 545px;
 }
 
 nav#menu li {
